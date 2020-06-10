@@ -21,5 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/messages', 'CommentController@index')
+    ->name('comment.index');
+
 Route::post('/contact-form', 'CommentController@store')
     ->name('comment.store');

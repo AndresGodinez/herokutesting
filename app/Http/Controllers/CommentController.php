@@ -6,6 +6,7 @@ use App\Comment;
 use Illuminate\Http\Request;
 use function compact;
 use function GuzzleHttp\Promise\all;
+use function redirect;
 use function response;
 use function view;
 
@@ -18,7 +19,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::orderDescBy('created_at')->paginate();
+        $comments = Comment::orderByDesc('created_at')->paginate();
 
         return response(view('comments/index', compact('comments')));
     }
@@ -41,7 +42,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        Comment::create([
+            'name' => $request->get('name'),
+            'telephone' => $request->get('telephone'),
+            'comment' => $request->get('comment')
+        ]);
+
+
+
+
     }
 
     /**

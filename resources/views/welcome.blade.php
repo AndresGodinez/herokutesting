@@ -13,19 +13,5 @@
 
     </head>
     <body>
-    <div class="container">
-        <div class="row">
-            <div class="col col-8">
-                <x-form method="put" class="m-4" action="{{ route('comment.store') }}">
-                    <x-field type="text" name="name" help="Nombre"></x-field>
-                    <x-field type="text" name="telephone" help="Teléfono"></x-field>
-                    <x-field type="email" name="try_email" help="no compartiremos tu informacion"></x-field>
-                    <div class="col-md-2">
-                        <x-field type="submit" class="btn btn-info"></x-field>
-                    </div>
-                </x-form>
-            </div>
-        </div>
-    </div>
     </body>
 </html>
