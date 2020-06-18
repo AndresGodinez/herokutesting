@@ -1,0 +1,33 @@
+:root{
+    --dark: #0A0A0A;
+    --dark-x: #111111;
+    --dark-xx: #222222;
+    --light: #ffffff;
+    --primary: #FF6079;
+    --primary-x: #FE3051;
+    --muted: #A1B0BF;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-image{
+    background-image: url("https://source.unsplash.com/1600x900/?grey,water");
+    min-height: 900px;
+}
+
+.img-top-rounded{
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.card{
+    background: transparent !important;
+    border: none;
+}
+
+.card-border-button-rounded{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

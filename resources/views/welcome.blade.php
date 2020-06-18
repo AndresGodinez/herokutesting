@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
     <title>Chef Smalls</title>
 </head>
@@ -70,6 +73,29 @@
             </a>
         </div>
     </div>
+</section>
+
+<section class="bg-image d-flex">
+    <div class="container align-self-center w-75">
+        <h2 class="font-weight-bold text-white text-center">Te consentimos</h2>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at delectus deserunt dignissimos dolore et illum ipsum itaque labore laboriosam, nesciunt obcaecati officiis omnis, quaerat quibusdam sint tempora vel voluptatem.
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card m-0 p-0">
+                <div class="card-header p-0 m-0">
+                    <img src="https://source.unsplash.com/user/erondu/500x600" alt="testing" class="img-fluid img-top-rounded">
+                </div>
+                <div class="card-body card-border-button-rounded">
+                    <h5>Grandes mezclas</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi cum delectus deserunt ea fugiat incidunt.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
