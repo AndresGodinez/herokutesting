@@ -14,6 +14,7 @@ body{
 
 .bg-image{
     background-image: url("https://source.unsplash.com/1600x900/?grey,water");
+    background-size: cover;
     min-height: 900px;
 }
 
