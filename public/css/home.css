@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark: #0A0A0A;
     --dark-x: #111111;
     --dark-xx: #222222;
@@ -8,32 +8,70 @@
     --muted: #A1B0BF;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.bg-image{
+.bg-image {
     background-image: url("https://source.unsplash.com/1600x900/?grey,water");
     background-size: cover;
     min-height: 900px;
 }
 
-.img-top-rounded{
+.img-top-rounded {
     border-top-right-radius: .5rem;
     border-top-left-radius: .5rem;
 }
 
-.card{
+.card {
     background: transparent !important;
     border: none;
 }
 
-.card-border-button-rounded{
+.card-border-button-rounded {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
-.carousel-caption{
-    background-color: rgba(0,0,0,.8) !important;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .8) !important;
     border-radius: .5rem;
+}
+
+.form-control {
+    background-color: #0A0A0A !important;
+    size: unset;
+}
+
+.form-control:focus {
+    background-color: #0A0A0A !important;
+    size: unset;
+}
+
+.bg-darker {
+    min-height: 300px;
+    background-color: #343A40;
+}
+
+.btn-special {
+    background: linear-gradient(90deg, #343A40 0%, #0A0A0A 100%);
+}
+
+.bg-x {
+    background-color: #0A0A0A !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 .5rem .5rem .5rem rgba(10,10,10,.8) !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.navbar {
+    min-height: 3rem;
 }

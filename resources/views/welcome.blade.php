@@ -18,18 +18,17 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darker fixed-top">
+        <a class="navbar-brand" href="#">Chef Smalls</a>
+        <button class="navbar-toggler" type="button" data-toggle=   "collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Productos</a>
+                <a class="nav-item nav-link" href="#">Contacto</a>
             </div>
         </div>
     </nav>
@@ -47,8 +46,8 @@
                 <div class="carousel-item active">
                     <img src="https://source.unsplash.com/1600x900/?nature,water" class="d-block w-100" alt="Random">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First 1slide labcel</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h5>Una gran comida comienza con sus ingredientes</h5>
+                        <p>Siempre usamos ingredientes de alta calidad y duración.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -185,6 +184,36 @@
     </div>
 
 
+</section>
+
+<section class=" py-5 bg-darker d-flex">
+    <div class="card bg-x shadow w-75 align-self-center mx-auto">
+        <div class="card-body">
+            <form action="{{ route('comment.store') }}" method="post">
+                @csrf
+                <div class="form-row container col-md-12">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="number" class="form-control" name="telephone"  placeholder="Telephone">
+                    </div>
+                </div>
+                <div class="form-row container col-md-12">
+                    <textarea placeholder="comment" class="form-control" name="comment" id="comment" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-row container col-md-12 mt-4">
+                    <div class="form-group col-md-3">
+                        <input type="submit" value="Enviar" class="text-white btn btn-special w-100">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
 </section>
 
 

@@ -48,9 +48,7 @@ class CommentController extends Controller
             'comment' => $request->get('comment')
         ]);
 
-
-
-
+        return response(view('comments.index'));
     }
 
     /**
