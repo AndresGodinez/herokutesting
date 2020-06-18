@@ -47,7 +47,7 @@
                 <div class="carousel-item active">
                     <img src="https://source.unsplash.com/1600x900/?nature,water" class="d-block w-100" alt="Random">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
+                        <h5>First 1slide labcel</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
